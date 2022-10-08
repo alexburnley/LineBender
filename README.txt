@@ -6,7 +6,7 @@ Unity Version: 2021.3.9f1
 Other Install Notes: None
 
 Controls:
-c - swaps between a first person stereographic camera (Display 1 and Display 2 for each eye)
+c - swaps between a first person stereographic camera (Display 1 and Display 2 for each eye) and a 3rd person camera
 q - Decrease IDP
 e - Increase IDP
 
