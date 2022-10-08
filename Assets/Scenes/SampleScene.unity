@@ -1963,7 +1963,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1870238579}
   - component: {fileID: 1870238578}
-  - component: {fileID: 1870238577}
   m_Layer: 0
   m_Name: Camera 3
   m_TagString: Untagged
@@ -1971,14 +1970,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1870238577
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870238576}
-  m_Enabled: 1
 --- !u!20 &1870238578
 Camera:
   m_ObjectHideFlags: 0
@@ -2047,7 +2038,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1893154663}
   - component: {fileID: 1893154665}
-  - component: {fileID: 1893154664}
   m_Layer: 0
   m_Name: Camera 2
   m_TagString: MainCamera
@@ -2070,14 +2060,6 @@ Transform:
   m_Father: {fileID: 2079050469}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1893154664
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893154662}
-  m_Enabled: 1
 --- !u!20 &1893154665
 Camera:
   m_ObjectHideFlags: 0
@@ -2267,6 +2249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2079050469}
+  - component: {fileID: 2079050470}
   m_Layer: 0
   m_Name: SterioScopic Camera Rig
   m_TagString: Untagged
@@ -2291,6 +2274,22 @@ Transform:
   m_Father: {fileID: 545986588}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2079050470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079050468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 920867be5a7e4466fbea740e8416734f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftEyeCamera: {fileID: 963194227}
+  rightEyeCamera: {fileID: 1893154665}
+  IPD: 0.08
+  changeIPD: 0.01
 --- !u!1001 &2084546172
 PrefabInstance:
   m_ObjectHideFlags: 0
