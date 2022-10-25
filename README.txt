@@ -13,3 +13,8 @@ While we were creating our AR scene we found that it was difficult to line up ou
  
 Challenge Focus:
 We overcame a number of challenges when setting up our AR project. It was difficult to set up the digital content to fit on the table in front of the player, and reliably track it when it was sitting on the table. This challenge was overcome by changing the scale of our objects that we parented to our fiducials, and by lighting up our AR workspace. We ended up making the puzzle much smaller than it would be in VR so that it would fit on the table. And because it was sometimes difficult for Unity to recognize our fiducials, we made sure our AR workspace was well lit. Another challenge we faced was the orientation of our computer’s webcam. In order to track the fiducial we needed the camera to view them from above. We were able to overcome this challenge by propping up the computer to view the scene from above. While this was not an ideal solution, it was one of the best methods we found when we attempted different tracking methods. 
+
+Video: BurnleyHumeMilestone2Video.mp4
+
+Note about Video:
+Since we did not have a way to build to a phone application, recording the video required using a laptop webcam. In order to show how someone would actually use the application in AR in the video, Alex is shown using a phone to view the application. While our application does not currently build for phone use, using a phone would be the intended use of the application.
