@@ -705,6 +705,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5eae0d86b55434311b8c4d75bd00fb40, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb0c3d29e540a417e834149c8d2b5ee2, type: 2}
     - target: {fileID: 919132149155446097, guid: 5eae0d86b55434311b8c4d75bd00fb40, type: 3}
       propertyPath: m_Name
       value: BR_Railing
@@ -1853,6 +1857,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f325872672e7c4320ba9eaae61be7947, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb0c3d29e540a417e834149c8d2b5ee2, type: 2}
     - target: {fileID: 919132149155446097, guid: f325872672e7c4320ba9eaae61be7947, type: 3}
       propertyPath: m_Name
       value: Wall_C_Outer
