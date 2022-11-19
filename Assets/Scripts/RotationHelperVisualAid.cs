@@ -20,15 +20,13 @@ public class RotationHelperVisualAid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // TODO: change visibility based on proximity to hand
-
-        // TODO: detect hand grabbing visual aid and notify parent   
+        // TODO: change visibility based on proximity to hand  
     }
 
     public void OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs args) {
         //base.OnSelectEntered(args);
         //args.interactorObject.keepSelectedTargetValid = true;
-        Debug.Log("onSelectEntered");
+        //Debug.Log("onSelectEntered");
         if(interactor == null) {
             interactor = args.interactorObject;
             gameObject.GetComponentInParent<RotationHelperScript>()?.onGrab(interactor);
@@ -37,7 +35,7 @@ public class RotationHelperVisualAid : MonoBehaviour
 
     public void OnSelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs args) {
         //base.OnSelectExited(args);
-        Debug.Log("onSelectExited");
+        //Debug.Log("onSelectExited");
         if(args.interactorObject == interactor) {
             interactor = null;
             gameObject.GetComponentInParent<RotationHelperScript>()?.onRelease();

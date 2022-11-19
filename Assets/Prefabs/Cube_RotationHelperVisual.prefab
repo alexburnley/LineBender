@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -6712820138651977431}
   m_Layer: 0
   m_Name: Cube_RotationHelperVisual
-  m_TagString: Untagged
+  m_TagString: LaserTransparent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
