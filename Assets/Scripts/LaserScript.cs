@@ -42,10 +42,15 @@ public class LaserScript : MonoBehaviour
                     direction = Vector3.Reflect(direction, raycastHit.normal);
                 }
                 else if(System.String.Compare(raycastHit.collider.tag, "LaserTarget") == 0) {
+                    i--;
                     point += direction * .1f;
                     previousTargets.Remove(raycastHit.collider.gameObject);
                     hitTargets.Add(raycastHit.collider.gameObject);
                     raycastHit.collider.gameObject.GetComponent<LaserTarget>().onLaserCollision(true);
+                }
+                else if(System.String.Compare(raycastHit.collider.tag, "LaserTransparent") == 0){
+                    point += direction * .1f;
+                    i--;
                 }
                 else {
                     break;

@@ -34,7 +34,7 @@ public class LaserPuzzleScript : MonoBehaviour
 
         complete = nowComplete;
 
-        Debug.Log(System.String.Format("Puzzle Complete? : {0}",complete));
+        //Debug.Log(System.String.Format("Puzzle Complete? : {0}",complete));
     }
 
     public bool getComplete() {

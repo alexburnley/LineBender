@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class RotationHelperScript : MonoBehaviour
 {
 
-    public GameObject manipulator;
+    IXRSelectInteractor manipulator;
+
     Vector3 initialManipulatorPosition; // Relative position of manipulator on grab
     Quaternion parentInitialRotation; // parent rotation on grab
     Plane plane;
@@ -17,7 +19,7 @@ public class RotationHelperScript : MonoBehaviour
     {
         rotationHelperVisual = Instantiate(rotationHelperVisual, transform);
         plane = new Plane(new Vector3(0,0,1),new Vector3(0,0,0));
-        onGrab(manipulator);
+        //onGrab(manipulator);
     }
 
     // Update is called once per frame
@@ -37,16 +39,26 @@ public class RotationHelperScript : MonoBehaviour
             transform.rotation = Quaternion.AngleAxis(angle, parentInitialRotation * rotationAxis) * parentInitialRotation ;
 
         }
+
+
+        // Reset rotation helper visual aid position and rotation.
+        rotationHelperVisual.transform.localPosition = Vector3.zero;
+
+        Quaternion q = new Quaternion();
+        q.SetFromToRotation(Vector3.up, rotationAxis);
+        rotationHelperVisual.transform.localRotation = q;
     }
 
 
-    public void onGrab(GameObject manipulator) {
+    public void onGrab(IXRSelectInteractor manipulator) {
         this.manipulator = manipulator;
         initialManipulatorPosition = manipulator.transform.position - transform.position;
         parentInitialRotation = transform.rotation;
+        //manipulatorActive = true;
     }
 
     public void onRelease() {
         manipulator = null;
+        //manipulatorActive = false;
     }
 }
