@@ -13,6 +13,8 @@ public class LaserTarget : MonoBehaviour
 
     LaserPuzzleScript puzzleParent;
 
+    public PowerCable[] connectedCables;
+
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +50,10 @@ public class LaserTarget : MonoBehaviour
             }
             if(puzzleParent != null) {
                 puzzleParent.updateValue(this, collision);
+            }
+
+            for(int i = 0; i < connectedCables.Length; i++) {
+                connectedCables[i].onPowerEvent(active);
             }
         }
     }
