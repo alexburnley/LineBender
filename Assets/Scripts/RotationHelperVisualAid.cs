@@ -11,22 +11,28 @@ public class RotationHelperVisualAid : MonoBehaviour
 {
 
     IXRSelectInteractor interactor;
+    public float visibilityDistance = 2.0f;
+
+    GameObject mainCamera;
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Assumes that there is only one object tagged with MainCamera
+        mainCamera = GameObject.FindWithTag("MainCamera");
     }
 
     // Update is called once per frame
     void Update()
     {
-        // TODO: change visibility based on proximity to hand  
+        // Change visibility based on proximity to hand
+        float dist = Vector3.Distance(mainCamera.transform.position, transform.position);
+        Renderer cameraRenderer = gameObject.GetComponent<Renderer>();
+        if(cameraRenderer != null) {
+            cameraRenderer.enabled = dist < visibilityDistance;
+        }
     }
 
     public void OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs args) {
-        //base.OnSelectEntered(args);
-        //args.interactorObject.keepSelectedTargetValid = true;
-        //Debug.Log("onSelectEntered");
         if(interactor == null) {
             interactor = args.interactorObject;
             gameObject.GetComponentInParent<RotationHelperScript>()?.onGrab(interactor);
@@ -34,8 +40,6 @@ public class RotationHelperVisualAid : MonoBehaviour
     }
 
     public void OnSelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs args) {
-        //base.OnSelectExited(args);
-        //Debug.Log("onSelectExited");
         if(args.interactorObject == interactor) {
             interactor = null;
             gameObject.GetComponentInParent<RotationHelperScript>()?.onRelease();
