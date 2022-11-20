@@ -5,9 +5,21 @@ Unity Version: 2021.3.9f1
 
 Other Install Notes: None
 
-Controls:
-c - swaps between a first person stereographic camera (Display 1 and Display 2 for each eye) and a 3rd person camera
-q - Decrease IDP
-e - Increase IDP
+Milestone 3 Q and A:
 
-For this milestone, our experience shows some of the mechanics and test assets we have created and obtained from the asset store for the game. The experience starts with the camera moving towards some of the puzzle assets for our game. The laser emitter is shown rotating, with the laser bouncing off of reflective cubes and passing through and activating targets. The camera moves to show some of the other assets, then focuses on the back of the room. In the back of the room, we have our test enemy asset moving across the room, periodically playing a beep sound. This is intended to test using positional audio to alert the player of the enemy's position. The player should have been able to determine the enemy's relative location throughout the experience using just the audio, but at the end we show how the enemy is moving to show how the positional audio elements work.
+User 1:
+Q: How is the way finding system?
+A: The cables are helpful. I like how they all light up when you power one target. It’s nice to know where the power is going. It is confusing where they are going to right now, but when you finish the door etc. the cables will be very nice.
+Response: We will add a door / starting position, and lead the player to the first target that perhaps is already enabled in order to make the way finding very intuitive.
+
+Q: How do you feel about the pointer based and look based navigation? Which do you prefer?
+A: It’s nice to have navigation based on the pointer, because in this game you’re not always moving forward. Instead you’re moving around one space. You can look at the puzzle while moving to the side which is nice.
+Response: We will take this response into account when deciding which navigation style to use in the final project.
+
+Q: What do you think of the interaction system? 
+A: The blocks are a little big, but you want them to be pretty big. I don’t like how your hand clips through the blocks when you pick them up. The main problem is that you don’t grab them on their outside, they instead transform their origin to your hand which is hard to manage. The rotation helper is very nice and smooth. 
+Response: We will resize the unity assets or player so that they have better relative scales. We will also see if we can create a different transform for the blocks to move to in your hand when you pick them up. 
+
+Q: Is there anything else that you would recommend us to work on?
+A: I want snap turn instead of continuous maybe. It makes you less sick. Boxes that I place on the ground sometimes clip/fall through.
+Response: We will try to fix the clipping problem, and we could enable snap turn for a future build.
