@@ -53,7 +53,14 @@ public class LaserScript : MonoBehaviour
                     i--;
                 }
                 else {
-                    break;
+                    LaserRedirector laserRedirector = raycastHit.collider.gameObject.GetComponent<LaserRedirector>();
+                    if(laserRedirector != null) {
+                        point = laserRedirector.getOppositeEndPosition();
+                        worldCoordPoints.Add(point);
+                        direction = laserRedirector.getOppositeEndDirection();
+                    }
+                    // If it isn't a redirector, end the laser path
+                    else break;
                 }
             }
             else {
