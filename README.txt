@@ -5,9 +5,18 @@ Unity Version: 2021.3.9f1
 
 Other Install Notes: None
 
-Milestone 3 Q and A:
 
-User 1:
+Milestone 3:
+For our two travel techniques we used the XR toolkit to change between two difference sources of forward movement. We tried and implemented both look based travel and pointer based travel. For both we were able to use the joystick of the left controller to mover around on the floor of our room. 
+
+Our wayfinding technique is an immersive path of cables on the floor of our room. Each cable leads the player to the next target in the puzzle. Upon activating a puzzle target the cable lights up towards the final goal that the player will eventually need to travel to in order to finish the game. 
+
+Our selection / manipulation tech
+
+
+
+Q and A User 1:
+
 Q: How is the way finding system?
 A: The cables are helpful. I like how they all light up when you power one target. It’s nice to know where the power is going. It is confusing where they are going to right now, but when you finish the door etc. the cables will be very nice.
 Response: We will add a door / starting position, and lead the player to the first target that perhaps is already enabled in order to make the way finding very intuitive.
