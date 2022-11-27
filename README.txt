@@ -12,7 +12,7 @@ For our two travel techniques we used the XR toolkit to change between two diffe
 Our wayfinding technique is an immersive path of cables on the floor of our room. Each cable leads the player to the next target in the puzzle. Upon activating a puzzle target the cable lights up towards the final goal that the player will eventually need to travel to in order to finish the game. 
 
 Our selection / manipulation tech
-
+The selection and manipulation technique we used was to make the user pick up items directly. With the horror/puzzle game that we are going for, we want the users to move around the scenes, and requiring them to pick items up directly encourages them to do so. To help the user manipulate the rotation of items in cases where precise rotation was necessary, we created a precision rotation tool, where the user can grab a glowing handle around the item. It tracks the users hand movement until they let go, but the objects position is locked and rotation is locked around a single axis.
 
 
 Q and A User 1:
@@ -32,3 +32,25 @@ Response: We will resize the unity assets or player so that they have better rel
 Q: Is there anything else that you would recommend us to work on?
 A: I want snap turn instead of continuous maybe. It makes you less sick. Boxes that I place on the ground sometimes clip/fall through.
 Response: We will try to fix the clipping problem, and we could enable snap turn for a future build.
+
+
+
+User 2:
+Q: How do you like look based movement?
+A: I don't really like it, it's weird. I kept accidentally going in directions that I didn't want to because I looked at something else.
+
+Q: How do you like pointer based movement?
+A: I like it better than the other one. I liked being able to look around a bit as I moved, I didn't like having to stare where I wanted to go.
+Reflection on Travel Mechanics: In a puzzle style game where it is important to allow the user to look around as they move. However, different users may prefer one over the other so it may be better to allow the user to switch between modes.
+
+Q: How did you like the wayfinding system? (told that there will eventually be an unpowered exit door as the objective, which would be connected to the power cables)
+A: I don't know. The power cables make it easy to see whats connected but I don't think I'd be able to guess that the laser needs to go through the targets.
+Reflection: We need to implement a better way to tell the user where to go and what to do. As long as they understand that they need to power the door and that lasers can be used to power targets, the cables are useful for telling them where to look and what targets to power, but we need to get the user to that point where we can let them just follow the cables.
+
+Q: How did you like the mechanics for picking things up?
+A: I didn't like it. The blocks were too big and in my face, and I couldn't put them where I wanted to.
+Reflection: With blocks that are so large, centering them on the user's hand when they are picked up makes them unwieldy. We need to make the user grab from the surface of the blocks.
+
+Q: How did you like the Rotation Helper?
+A: It was a little confusing at first but once I figured out how to use it, it made it a lot easier. I couldn't really place the block well so I needed to use it to aim the lasers.
+Reflection: This does a good job of helping the user, but it is only as useful as it is because of the shortcomings of the grab mechanics.
