@@ -40,6 +40,9 @@ public class LaserTarget : MonoBehaviour
                 parent = parent.parent;
             }
         }
+
+        timeBetweenPlays += poweredOnAudioClip.length;
+        timeSinceLastPlay += poweredOnAudioClip.length;
     }
 
     // Update is called once per frame
@@ -66,7 +69,13 @@ public class LaserTarget : MonoBehaviour
             for(int i = 0; i < connectedCables.Length; i++) {
                 connectedCables[i].onPowerEvent(active);
             }
+
+            if(!collision) {
+                audioSource.Stop();
+                timeSinceLastPlay += poweredOnAudioClip.length;
+            }
         }
+        
     }
 
     public bool isActive() {
