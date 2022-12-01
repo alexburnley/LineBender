@@ -2,16 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserPuzzleScript : MonoBehaviour
+public class LaserPuzzleScript : MonoBehaviour, IPuzzleCompleteListener
 {
 
     Dictionary<LaserTarget, bool> targets = new Dictionary<LaserTarget, bool>();
 
     bool complete = false;
 
+
+    public bool enableEmitterByDefault = false;
+    public EmitLaserScript laserForPuzzle;
+
+    public IPuzzleCompleteListener[] listeners;
+
     // Start is called before the first frame update
     void Start()
     {
+        laserForPuzzle?.setPowered(enableEmitterByDefault);
     }
 
     // Update is called once per frame
@@ -32,6 +39,12 @@ public class LaserPuzzleScript : MonoBehaviour
             nowComplete = nowComplete && active;
         }
 
+        if(complete != nowComplete){
+            for(int i = 0; i < listeners.Length; i++) {
+                listeners[i].onPuzzleEvent(nowComplete);
+            }
+        }
+
         complete = nowComplete;
 
         //Debug.Log(System.String.Format("Puzzle Complete? : {0}",complete));
@@ -39,5 +52,10 @@ public class LaserPuzzleScript : MonoBehaviour
 
     public bool getComplete() {
         return complete;
+    }
+
+    // Listener function
+    void IPuzzleCompleteListener.onPuzzleEvent(bool complete) {
+        laserForPuzzle?.setPowered(complete);
     }
 }

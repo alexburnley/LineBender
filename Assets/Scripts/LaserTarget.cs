@@ -16,6 +16,13 @@ public class LaserTarget : MonoBehaviour
     public PowerCable[] connectedCables;
 
 
+    public AudioSource audioSource;
+    public AudioClip poweredOnAudioClip;
+
+    public float timeBetweenPlays;
+    float timeSinceLastPlay;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +45,11 @@ public class LaserTarget : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        timeSinceLastPlay += Time.deltaTime;
+        if(active && timeSinceLastPlay > timeBetweenPlays) {
+            audioSource.PlayOneShot(poweredOnAudioClip);
+            timeSinceLastPlay = 0;
+        }
     }
 
     public void onLaserCollision(bool collision) {

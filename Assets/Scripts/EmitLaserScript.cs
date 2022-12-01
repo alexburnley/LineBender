@@ -28,4 +28,8 @@ public class EmitLaserScript : MonoBehaviour
             Destroy(actualLaser);
         }
     }
+
+    public void setPowered(bool powered) {
+        isPowered = powered;
+    }
 }
