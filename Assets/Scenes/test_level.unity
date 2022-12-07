@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.368
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.017031742, g: 0.022797622, b: 0.031944826, a: 0.368}
+  m_IndirectSpecularColor: {r: 0.017033327, g: 0.02279947, b: 0.031942718, a: 0.368}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1678,18 +1678,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5786675298840724719, guid: aa1f7d8a0ae284433aa24bf8b89643c2, type: 3}
-      propertyPath: audioSource
-      value: 
-      objectReference: {fileID: 1880428069}
-    - target: {fileID: 5786675298840724719, guid: aa1f7d8a0ae284433aa24bf8b89643c2, type: 3}
-      propertyPath: activeMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: eb47d2fe4b29f442e8d63dfb9c54b565, type: 2}
-    - target: {fileID: 5786675298840724719, guid: aa1f7d8a0ae284433aa24bf8b89643c2, type: 3}
-      propertyPath: poweredOnAudioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: c47fafd84519f4122a98c0fd53aac18b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa1f7d8a0ae284433aa24bf8b89643c2, type: 3}
 --- !u!1001 &377784177
@@ -11084,107 +11072,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16dff5d8b813943e3be2837353e3177c, type: 3}
   m_PrefabInstance: {fileID: 1823830756}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1880428063 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4359056643740417685, guid: aa1f7d8a0ae284433aa24bf8b89643c2, type: 3}
-  m_PrefabInstance: {fileID: 373640539}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1880428069
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880428063}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1890854661 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c3c4afba749434a4d8d157b571fde714, type: 3}
@@ -12943,7 +12830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6106441488696300403, guid: ef5b19d96728980448655365a12423cf, type: 3}
       propertyPath: huntPlayer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6106441488696300403, guid: ef5b19d96728980448655365a12423cf, type: 3}
       propertyPath: killDistance

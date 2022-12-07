@@ -34,7 +34,6 @@ public class GrabHelper : MonoBehaviour
             hoverObject = args.interactableObject;
             transform.position = hoverObject.transform.position;
             transform.rotation = hoverObject.transform.rotation;
-            Debug.Log("Hover entered");
         }
     }
 

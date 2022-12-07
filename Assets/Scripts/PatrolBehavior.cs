@@ -37,7 +37,6 @@ public class PatrolBehavior : MonoBehaviour
 
 
     UnityEngine.AI.NavMeshAgent agent;
-    Transform currentTarget;
     int currentPathIndex;
     
     GameObject playerCamera;
@@ -54,12 +53,10 @@ public class PatrolBehavior : MonoBehaviour
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         if(patrolPath.Length > 0) {
-            currentTarget = patrolPath[0];
             agent.destination = patrolPath[0].position;
             currentPathIndex = 0;
         }
         else {
-            currentTarget = transform;
             agent.destination = transform.position;
         }
         lightComponent = light.GetComponent<Light>();
@@ -92,8 +89,7 @@ public class PatrolBehavior : MonoBehaviour
                 audioSource.volume = chaseVolume;
             }
 
-            currentTarget = playerCamera.transform;
-            agent.destination = currentTarget.position;
+            agent.destination = playerCamera.transform.position;
         }
 
         
@@ -115,8 +111,7 @@ public class PatrolBehavior : MonoBehaviour
                 agent.speed = patrolSpeed;
 
                 // Resume patrol
-                currentTarget = patrolPath[currentPathIndex];
-                agent.destination = currentTarget.position;
+                agent.destination = patrolPath[currentPathIndex].position;
 
                 audioSource.volume = patrolVolume;
             }
@@ -129,8 +124,7 @@ public class PatrolBehavior : MonoBehaviour
                     currentPathIndex = 0;
                 }
 
-                currentTarget = patrolPath[currentPathIndex];
-                agent.destination = currentTarget.position;
+                agent.destination = patrolPath[currentPathIndex].position;
             }
         }
         
@@ -165,6 +159,6 @@ public class PatrolBehavior : MonoBehaviour
 
 
     private bool reachedTarget() {
-        return Vector3.Distance(currentTarget.position, transform.position) < 1.7;
+        return Vector3.Distance(agent.destination, transform.position) < 1.7;
     }
 }
