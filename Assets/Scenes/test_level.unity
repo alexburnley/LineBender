@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.368
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.017033327, g: 0.02279947, b: 0.031942718, a: 0.368}
+  m_IndirectSpecularColor: {r: 0.017031742, g: 0.022797622, b: 0.031944826, a: 0.368}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1925,6 +1925,10 @@ PrefabInstance:
       propertyPath: connectedCables.Array.data[3]
       value: 
       objectReference: {fileID: 908495728}
+    - target: {fileID: 5261814149481298888, guid: e8810599ad44f4730a61e04a65457067, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5953396708521534908, guid: e8810599ad44f4730a61e04a65457067, type: 3}
       propertyPath: m_Name
       value: VR_Target (5)
