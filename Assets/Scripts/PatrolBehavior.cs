@@ -42,6 +42,7 @@ public class PatrolBehavior : MonoBehaviour
     
     GameObject playerCamera;
 
+    public RestartLevel restartLevel;
 
     bool isChasing;
 
@@ -102,6 +103,7 @@ public class PatrolBehavior : MonoBehaviour
             // If visible and within range, end game
             if(visible && Vector3.Distance(transform.position, playerCamera.transform.position) < killDistance) {
                 Debug.Log("Found Player. Game Over");
+                restartLevel.Restart();
             }
 
             // If reached player's last known location and not visible, 

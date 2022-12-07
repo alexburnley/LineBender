@@ -8003,7 +8003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388271959}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 13.58, y: 0, z: 12.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9642,6 +9642,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9658b420218474b77b4718e87cc912c1, type: 3}
+--- !u!1 &1684664524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1684664525}
+  m_Layer: 0
+  m_Name: DeathRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1684664525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684664524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.74, y: 0, z: -1.81}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1692832407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11192,6 +11223,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57781860645e242aaa01da0e95bcc92f, type: 3}
   m_PrefabInstance: {fileID: 317365981}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1967128973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1967128975}
+  - component: {fileID: 1967128974}
+  m_Layer: 0
+  m_Name: RestartLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1967128974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967128973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65aee6e65f659e14a8b57202995d2766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restartDelay: 5
+  loadingRoom: {fileID: 1684664525}
+--- !u!4 &1967128975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967128973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.5901136, y: -2.4916348, z: 9.694494}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1969019881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12567,6 +12644,10 @@ PrefabInstance:
       propertyPath: killDistance
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6106441488696300403, guid: ef5b19d96728980448655365a12423cf, type: 3}
+      propertyPath: restartLevel
+      value: 
+      objectReference: {fileID: 1967128974}
     - target: {fileID: 6106441488696300403, guid: ef5b19d96728980448655365a12423cf, type: 3}
       propertyPath: patrolPath.Array.size
       value: 4
