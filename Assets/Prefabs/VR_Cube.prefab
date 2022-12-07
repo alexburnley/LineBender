@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -2401161936512712432}
   - component: {fileID: 5471196966075845768}
   - component: {fileID: 664749734347195358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: VR_Cube
   m_TagString: Reflective
   m_Icon: {fileID: 0}
