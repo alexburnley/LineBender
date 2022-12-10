@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4101337771963477900
 Transform:
@@ -158,6 +158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VR_DoorSide (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46c4c8f5284f447519e464fa1338c710, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46c4c8f5284f447519e464fa1338c710, type: 3}
 --- !u!4 &1891973718991867043 stripped
@@ -224,6 +228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VR_DoorFrame_3x (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f77d3d4e62db449718a8504cfb100202, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f77d3d4e62db449718a8504cfb100202, type: 3}
 --- !u!4 &1806657085186389934 stripped
@@ -286,6 +294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VR_DoorSide
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46c4c8f5284f447519e464fa1338c710, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46c4c8f5284f447519e464fa1338c710, type: 3}
 --- !u!4 &4195385534538115918 stripped
@@ -347,6 +359,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f821b0935c1e24bffa78ae1ebe47d9e2, type: 3}
       propertyPath: m_Name
       value: VR_DoorWall_3x
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f821b0935c1e24bffa78ae1ebe47d9e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f821b0935c1e24bffa78ae1ebe47d9e2, type: 3}
@@ -428,6 +444,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f77d3d4e62db449718a8504cfb100202, type: 3}
       propertyPath: m_Name
       value: VR_DoorFrame_3x
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f77d3d4e62db449718a8504cfb100202, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f77d3d4e62db449718a8504cfb100202, type: 3}

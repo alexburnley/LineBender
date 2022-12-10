@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &450326812789427172
 Transform:
@@ -98,3 +98,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeMaterial: {fileID: 2100000, guid: 919308bde27c64cf38a237bf7fbb06cc, type: 2}
   inactiveMaterial: {fileID: 2100000, guid: cb0c3d29e540a417e834149c8d2b5ee2, type: 2}
+  minimumNumActivatedTargets: 1

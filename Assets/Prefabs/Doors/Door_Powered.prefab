@@ -142,7 +142,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4101337771963477900
 Transform:
@@ -313,6 +313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VR_DoorLock_1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b62378f88ae644f88aa63ab02e1d9cf2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b62378f88ae644f88aa63ab02e1d9cf2, type: 3}
 --- !u!4 &1457210318842404406 stripped
@@ -374,6 +378,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 390b97bb527a845548fa6a036e4a0c92, type: 3}
       propertyPath: m_Name
       value: VR_DoorLock_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 390b97bb527a845548fa6a036e4a0c92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 390b97bb527a845548fa6a036e4a0c92, type: 3}
@@ -597,6 +605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Way_SStr (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a512813edb39748d7ab47d29e44e4c4f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a512813edb39748d7ab47d29e44e4c4f, type: 3}
 --- !u!4 &4093737388265418917 stripped
@@ -658,6 +670,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f821b0935c1e24bffa78ae1ebe47d9e2, type: 3}
       propertyPath: m_Name
       value: VR_DoorWall_3x
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f821b0935c1e24bffa78ae1ebe47d9e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f821b0935c1e24bffa78ae1ebe47d9e2, type: 3}
@@ -740,6 +756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VR_DoorLock_Base
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c760bfdfe849840a481c1366b156221c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c760bfdfe849840a481c1366b156221c, type: 3}
 --- !u!4 &5477181290662023981 stripped
@@ -801,6 +821,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f77d3d4e62db449718a8504cfb100202, type: 3}
       propertyPath: m_Name
       value: VR_DoorFrame_3x (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f77d3d4e62db449718a8504cfb100202, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f77d3d4e62db449718a8504cfb100202, type: 3}
@@ -864,6 +888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Way_SStr
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a512813edb39748d7ab47d29e44e4c4f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a512813edb39748d7ab47d29e44e4c4f, type: 3}
 --- !u!4 &7051459877346148268 stripped
@@ -926,6 +954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VR_DoorFrame_3x
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f77d3d4e62db449718a8504cfb100202, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f77d3d4e62db449718a8504cfb100202, type: 3}
 --- !u!4 &7557296351884564129 stripped
@@ -987,6 +1019,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 30c305bc058ab44b3a8cd966ac684dd8, type: 3}
       propertyPath: m_Name
       value: VR_DoorLock_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 30c305bc058ab44b3a8cd966ac684dd8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30c305bc058ab44b3a8cd966ac684dd8, type: 3}
