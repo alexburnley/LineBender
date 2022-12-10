@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserPuzzleScript : MonoBehaviour, IPuzzleCompleteListener
+public class LaserPuzzleScript : PuzzleCompleteListener
 {
 
     Dictionary<LaserTarget, bool> targets = new Dictionary<LaserTarget, bool>();
@@ -13,7 +13,7 @@ public class LaserPuzzleScript : MonoBehaviour, IPuzzleCompleteListener
     public bool enableEmitterByDefault = false;
     public EmitLaserScript laserForPuzzle;
 
-    public IPuzzleCompleteListener[] listeners;
+    public PuzzleCompleteListener[] listeners;
 
     // Start is called before the first frame update
     void Start()
@@ -55,7 +55,7 @@ public class LaserPuzzleScript : MonoBehaviour, IPuzzleCompleteListener
     }
 
     // Listener function
-    void IPuzzleCompleteListener.onPuzzleEvent(bool complete) {
+    void PuzzleCompleteListener.onPuzzleEvent(bool complete) {
         laserForPuzzle?.setPowered(complete);
     }
 }
