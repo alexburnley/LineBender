@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7478003002475932955}
   - component: {fileID: 8237958944900225276}
   - component: {fileID: -6354955649168623562}
-  - component: {fileID: 7943342709702655249}
   - component: {fileID: -2414213740881703973}
   m_Layer: 0
   m_Name: CubeWall
@@ -85,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7943342709702655249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6082923986950862837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0c83805bed892c45b489530a420e5d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationHelperVisual: {fileID: 3156782890695585734, guid: 16b35c828a1b5b04a8fcb38734e6c681, type: 3}
-  rotationAxis: {x: 0, y: 0, z: -1}
 --- !u!65 &-2414213740881703973
 BoxCollider:
   m_ObjectHideFlags: 0
