@@ -8,11 +8,13 @@ public class PowerCable : MonoBehaviour
     public Material activeMaterial;
     public Material inactiveMaterial;
 
+    public int minimumNumActivatedTargets = 1;
+
     int numTargets;
     // Start is called before the first frame update
     void Start()
     {
-        numTargets = 0;
+        numTargets = 1 - minimumNumActivatedTargets;
     }
 
     // Update is called once per frame
