@@ -15,6 +15,8 @@ public class LaserPuzzleScript : PuzzleCompleteListener
 
     public PuzzleCompleteListener[] listeners;
 
+    public PowerCable[] connectedCables;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,10 @@ public class LaserPuzzleScript : PuzzleCompleteListener
         if(complete != nowComplete){
             for(int i = 0; i < listeners.Length; i++) {
                 listeners[i].onPuzzleEvent(nowComplete);
+            }
+
+            for(int i = 0; i < connectedCables.Length; i++) {
+                connectedCables[i].onPowerEvent(nowComplete);
             }
         }
 
