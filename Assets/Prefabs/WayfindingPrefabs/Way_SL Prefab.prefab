@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 450326812789427172}
   - component: {fileID: -1979241948083575947}
   - component: {fileID: 6625698758984271003}
-  - component: {fileID: 627760661717357277}
+  - component: {fileID: -1392546945372223913}
   m_Layer: 0
-  m_Name: Way_L2 Prefab
+  m_Name: Way_SL Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8523324425014377736}
-  m_Mesh: {fileID: 6192792186776119829, guid: 7fcf8d48e50a04c8b8e2c3b3d685c0db, type: 3}
+  m_Mesh: {fileID: -2089756246110300638, guid: 960f8323abaca436690d50ae0e7db1d9, type: 3}
 --- !u!23 &6625698758984271003
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &627760661717357277
+--- !u!114 &-1392546945372223913
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
