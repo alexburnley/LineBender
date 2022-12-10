@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class PuzzleCompleteListener : MonoBehaviour
 {
-    abstract void onPuzzleEvent(bool isComplete);
+    public abstract void onPuzzleEvent(bool isComplete);
 }

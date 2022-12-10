@@ -32,24 +32,25 @@ public class PoweredDoor : PuzzleCompleteListener
     void Start()
     {
         resetTargets(currentlyOpen);
-        //currentTime = trans
+        currentTime = transitionTime;
     }
 
     // Update is called once per frame
-    void LateFixedUpdate()
+    void Update()
     {
         currentTime += Time.deltaTime;
 
         float t = currentTime / transitionTime;
 
-        leftSide.transform.position = Vector3.Lerp(leftOrigin, leftTarget, t);
-        rightSide.transform.position = Vector3.Lerp(rightOrigin, rightTarget, t);
+        leftSide.transform.position = Vector3.Lerp(leftOrigin.position, leftTarget.position, t);
+        rightSide.transform.position = Vector3.Lerp(rightOrigin.position, rightTarget.position, t);
     }
 
     // Listener function
-    void PuzzleCompleteListener.onPuzzleEvent(bool complete) {
+    public override void onPuzzleEvent(bool complete) {
         
         if(complete != currentlyOpen) {
+            currentlyOpen = complete;
             resetTargets(complete);
             currentTime = transitionTime - currentTime;
             if(currentTime < 0) currentTime = 0;
@@ -58,16 +59,16 @@ public class PoweredDoor : PuzzleCompleteListener
 
     private void resetTargets(bool open) {
         if(open) {
-            leftTarget = leftClosedPoint;
-            leftOrigin = leftOpenPoint;
-            rightTarget = rightClosedPoint;
-            rightOrigin = rightOpenPoint;
-        }
-        else {
             leftTarget = leftOpenPoint;
             leftOrigin = leftClosedPoint;
             rightTarget = rightOpenPoint;
             rightOrigin = rightClosedPoint;
+        }
+        else {
+            leftTarget = leftClosedPoint;
+            leftOrigin = leftOpenPoint;
+            rightTarget = rightClosedPoint;
+            rightOrigin = rightOpenPoint;
         }
     }
 }

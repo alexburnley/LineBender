@@ -55,7 +55,7 @@ public class LaserPuzzleScript : PuzzleCompleteListener
     }
 
     // Listener function
-    void PuzzleCompleteListener.onPuzzleEvent(bool complete) {
+    public override void onPuzzleEvent(bool complete) {
         laserForPuzzle?.setPowered(complete);
     }
 }
