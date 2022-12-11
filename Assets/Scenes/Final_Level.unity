@@ -12719,6 +12719,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube90 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6871581970683350626, guid: 6a420fb3ea13d4f1ebd65ca97fcfc2c7, type: 3}
+      propertyPath: rotationAxis.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871581970683350626, guid: 6a420fb3ea13d4f1ebd65ca97fcfc2c7, type: 3}
+      propertyPath: rotationAxis.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a420fb3ea13d4f1ebd65ca97fcfc2c7, type: 3}
 --- !u!1 &689708206
@@ -33585,6 +33593,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube90 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6871581970683350626, guid: 6a420fb3ea13d4f1ebd65ca97fcfc2c7, type: 3}
+      propertyPath: rotationAxis.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871581970683350626, guid: 6a420fb3ea13d4f1ebd65ca97fcfc2c7, type: 3}
+      propertyPath: rotationAxis.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a420fb3ea13d4f1ebd65ca97fcfc2c7, type: 3}
 --- !u!1001 &1657015234
@@ -41296,6 +41312,14 @@ PrefabInstance:
     - target: {fileID: 1774531353177859841, guid: 6a420fb3ea13d4f1ebd65ca97fcfc2c7, type: 3}
       propertyPath: m_Name
       value: Cube90 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871581970683350626, guid: 6a420fb3ea13d4f1ebd65ca97fcfc2c7, type: 3}
+      propertyPath: rotationAxis.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871581970683350626, guid: 6a420fb3ea13d4f1ebd65ca97fcfc2c7, type: 3}
+      propertyPath: rotationAxis.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a420fb3ea13d4f1ebd65ca97fcfc2c7, type: 3}
